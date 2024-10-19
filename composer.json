@@ -1,0 +1,29 @@
+{
+    "name": "yekta-kalantary/laravel-telegram-bot",
+    "description": "A Laravel package for Telegram Bot API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yekta Kalantary"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Yekta\\LaravelTelegramBot\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "longman/telegram-bot": "*",
+        "illuminate/support": "^10.0|^11.0"
+    },
+	 "minimum-stability": "stable",
+	 "extra": {
+        "laravel": {
+            "providers": [
+                "Yekta\\LaravelTelegramBot\\Providers\\TelegramServiceProvider"
+            ]
+        }
+    }
+}
